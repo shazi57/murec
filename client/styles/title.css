@@ -1,15 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@500&display=swap');
+@keyframes titlefadein{
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.button-container {
+  margin-top: 10rem;
+  justify-content: center;
+}
+
+.title-container {
+  margin-left: 13rem;
+  animation-name: titlefadein;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
 .title {
+  /* opacity: 0; */
   font-family: 'Anton', sans-serif;
   font-size: 8rem;
   color: white;
   font-weight: 400;
 }
 
+.MuiIconButton-root{
+  width: 4rem;
+  height: 4rem;
+  animation-name: titlefadein;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.MuiSvgIcon-root {
+  color: white;
+}
+
+.djbox{
+  margin-left: 5px;
+  width: 160px;
+  height: 160px;
+}
+
 .subtitle {
+  margin-left: 13rem;
+  /* opacity: 0; */
   font-family: 'Anton', sans-serif;
   font-size: 8rem;
   color: black;
   font-weight: 400;
+  animation-name: titlefadein;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
